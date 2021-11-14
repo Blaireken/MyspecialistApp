@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myspecialist">
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".darktheme.DarkThemeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UserInterface.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".UserInterface.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".UserInterface.DoctorDetail"
+            android:parentActivityName=".UserInterface.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Sign In Activity -->
+        <activity
+            android:name=".UserInterface.SigninActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserInterface.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Sign Up Activity -->
+        <activity
+            android:name=".UserInterface.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UserInterface.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar"> <!-- Launcher Activity -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

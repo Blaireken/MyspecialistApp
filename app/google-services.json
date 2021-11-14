@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "416796794969",
+    "firebase_url": "https://myspecialist-c097d.firebaseio.com",
+    "project_id": "myspecialist-c097d",
+    "storage_bucket": "myspecialist-c097d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416796794969:android:0f884c6209731cc6259148",
+        "android_client_info": {
+          "package_name": "com.myspecialist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416796794969-59s2e54qh8c2rcqsgcuej2tnomls7ank.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV6pG81g2loX0DOoyWv_SsGFqkGlD5duk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416796794969-59s2e54qh8c2rcqsgcuej2tnomls7ank.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

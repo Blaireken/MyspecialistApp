@@ -1,0 +1,61 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/messages_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <ListPreference
+            app:defaultValue="reply"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="reply"
+            app:isPreferenceVisible="false"
+            app:title="@string/reply_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <SwitchPreference
+        app:title="Notifications"
+        app:allowDividerAbove="true"
+        app:summaryOn="Show notifications in the status bar"
+        app:summaryOff="Don't show notifications"/>
+
+
+    <PreferenceCategory
+        app:key="theme_category"
+        app:title="Theme">
+
+        <ListPreference
+            app:key="themePref"
+            app:title="Choose theme"
+            app:defaultValue="default"
+            app:dialogTitle="Choose theme"
+            app:entries="@array/themeListArray"
+            app:entryValues="@array/themeEntryArray"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title"
+            app:summaryOff="Don't sync changes in background"
+            app:summaryOn="Sync changes in background. May increase battery consumption"/>
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:isPreferenceVisible="false"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

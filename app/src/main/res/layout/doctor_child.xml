@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/doctor_pic"
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@null"/>
+
+        <LinearLayout
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/doctor_pic"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="wrap_content"
+            android:text="Dr Harun"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/doctor_duty"
+                    android:layout_width="wrap_content"
+                    android:text="Doctor Rank"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/dash"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/doctor_department"
+                    android:layout_width="wrap_content"
+                    android:text="Doctor Department"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_location"
+                    android:contentDescription="@string/location"/>
+                <TextView
+                    android:id="@+id/doctor_location"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Doctor Location"
+                    android:textSize="13sp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_arrow_right"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
